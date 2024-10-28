@@ -83,11 +83,11 @@
   @media (max-width: 1100px) {
     .project-menu {
       width: 28rem;
-      top: 20%;
+      top: 30%;
       transform: translateX(-50%);
     }
     .project-item {
-      height: 2rem;
+      height: 4rem;
       width: 100%;
     }
     .project-item.activeProject .title {
@@ -98,7 +98,12 @@
     }
   }
   @media (max-width: 700px) {
+    .project-item {
+      height: 5rem;
+      width: 100%;
+    }
     .project-menu {
+      /* left: 40%; */
       width: 28rem;
       flex-direction: column;
       align-items: center;
@@ -107,18 +112,20 @@
       font-size: 0.7rem;
     }
     .project-sub-container {
-      margin-top: 1rem;
+      margin-top: 2rem;
       width: 12rem;
+      transform: translateX(30vw) translateY(-60%);
     }
     .project-sub-container img {
       width: 12rem;
     }
     .link-container a {
       margin-top: 0.5rem;
-      width: 50%;
+      width: 50vw;
       height: 2rem;
     }
     .project-items-container {
+      transform: translateX(-30vw);
       margin-top: 0;
     }
   }

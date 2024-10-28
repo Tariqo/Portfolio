@@ -1,3 +1,5 @@
+
+
 .menu {
     width: 19rem;
     position: fixed;
@@ -6,6 +8,8 @@
     top: 60%;
     transform: translateY(-60%);
     left: 15vw;
+    max-height: 80vh; /* Limit height to viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .item {
@@ -33,7 +37,8 @@
     top: 22%;
     right: 10vw;
     cursor: pointer;
-    /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.429), rgba(3, 3, 150, 0.133) 100%); */
+    max-height: 70vh; /* Limit height to viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .active-subheading {
@@ -112,6 +117,7 @@
     .sub-container {
         right: 1rem;
         width: 15rem;
+        max-height: 60vh; /* Limit height further on smaller screens */
     }
     .item.active .title{
         font-size: 1rem;
@@ -126,10 +132,14 @@
 @media (max-width: 700px) {
 
     .sub-container {
-    width: 15rem;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+        width: 15rem;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 50vh; /* Further limit height for mobile */
+    }
+    .menu {
+        max-height: 50vh; /* Also limit menu height on mobile */
     }
     .title {
         font-size: 0.8rem;

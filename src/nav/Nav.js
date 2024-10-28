@@ -4,7 +4,7 @@ import astronautHelmet from "../assets/astronaut-helmet.png";
 import deadEye from "../assets/dead-eye.png";
 import stack from "../assets/stack.png";
 import envelope from "../assets/envelope.png";
-import linkedinIcon from "../assets/linkedin.png"; // Add a LinkedIn icon here
+import linkedinIcon from "../assets/linkedin.png"; 
 import "../styles/nav.css";
 
 export default function Nav() {

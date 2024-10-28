@@ -58,7 +58,7 @@ a{
         transform: translateX(0);
     }
     .nav{
-        top: calc(100vh - 8rem);
+        top: 9rem;
         transform: translateX(-50%);
     }
     .nav-link{
