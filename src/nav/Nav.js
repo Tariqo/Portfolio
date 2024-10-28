@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link, useLocation } from "react-router-dom";
-import astronautHelmet from "../assets/astronaut-helmet.png"
-import deadEye from "../assets/dead-eye.png"
-import stack from "../assets/stack.png"
-import envelope from "../assets/envelope.png"
-import "../styles/nav.css"
+import astronautHelmet from "../assets/astronaut-helmet.png";
+import deadEye from "../assets/dead-eye.png";
+import stack from "../assets/stack.png";
+import envelope from "../assets/envelope.png";
+import linkedinIcon from "../assets/linkedin.png"; // Add a LinkedIn icon here
+import "../styles/nav.css";
 
 export default function Nav() {
     const location = useLocation();
     
-    const getNavPositionClass = () =>{
+    const getNavPositionClass = () => {
         switch(location.pathname) {
             case "/":
                 return "nav-about";
@@ -43,12 +44,12 @@ export default function Nav() {
     const pageTitle = getPageTitle();
 
     const isCurrentPage = (navClass) => {
-        return navClass === navPositionClass
+        return navClass === navPositionClass;
     };
 
-    const rederNavLink = (to, imgSrc, altText, navClass) => {
+    const renderNavLink = (to, imgSrc, altText, navClass) => {
         const isCurrent = isCurrentPage(navClass);
-        const linkClass = isCurrent ? "nav-link current" : "nav-link"
+        const linkClass = isCurrent ? "nav-link current" : "nav-link";
         
         return (
             <Link to={to} className={linkClass}>
@@ -56,36 +57,42 @@ export default function Nav() {
               {isCurrent && <h1 className="page-title">{pageTitle}</h1>}
             </Link>
           );
-    
     };
 
     return (
-        <nav className = {`nav ${navPositionClass}`}>
-            {rederNavLink(
+        <nav className={`nav ${navPositionClass}`}>
+            {renderNavLink(
                 "/",
                 astronautHelmet,
                 "About-Icon",
                 "nav-about"
             )}
-            {rederNavLink(
+            {renderNavLink(
                 "/skills",
                 deadEye,
                 "Skills-Icon",
                 "nav-skills"
             )}
-            {rederNavLink(
+            {renderNavLink(
                 "/projects",
                 stack,
                 "Projects-Icon",
                 "nav-projects"
             )}
-            {rederNavLink(
+            {renderNavLink(
                 "/contact",
                 envelope,
                 "Contact-Icon",
                 "nav-contact"
             )}
+            <a 
+                href="https://www.linkedin.com/in/tariqalwaeel" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="nav-link linkedin-link"
+            >
+                <img src={linkedinIcon} alt="LinkedIn-Icon" />
+            </a>
         </nav>
-    )
-
+    );
 }
