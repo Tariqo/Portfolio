@@ -5,7 +5,8 @@ const SubheadingData = {
             content: (
                 <>
                 <p>
-                    I am so sick and tired of looking for a job im so good please
+                A skilled software developer with a BSc in Computer Science from Eötvös Loránd University and
+                experience in Backend Engineering.
                 </p>
                 </>
             ),
@@ -13,21 +14,48 @@ const SubheadingData = {
     ],
     2: [
         {
-            title: "2023 Bachelor's Degree",
+            title: "MSc in Artificial Intelligence | Eötvös Loránd University",
             content: (
                 <>
                 <p>
-                    I am so sick and tired of looking for a job im so good please
+                    Modules: 
+                </p>
+                <p>
+                    ● Research
+                </p>
+                <p>
+                    ● Data Science 
+                </p>
+                <p>
+                    ● AI 
+                </p>
+                <p>
+                    ● Agile Methodologies
                 </p>
                 </>
             ),
         },
         {
-            title: "2024 Master's Degree",
+            title: "BSc in Computer Science | Eötvös Loránd University | 4.7 GPA",
             content: (
                 <>
                 <p>
-                    I am so sick and tired of looking for a job im so good please
+                    Modules:
+                </p>
+                <p>
+                    ● Probabilities
+                </p>
+                <p>
+                    ● Algorithms
+                </p>
+                <p>
+                    ● Project management
+                </p>
+                <p>
+                    ● Python
+                </p>
+                <p>
+                    ● Java
                 </p>
                 </>
             ),
@@ -40,7 +68,11 @@ const SubheadingData = {
                 <>
                 <p>
                 ● Built and managed custom dashboards to track KPIs, leading to a 20% improvement in system uptime.
+                </p>
+                <p>
                 ● Managed incidents and gained experience with on-call rotations to ensure operation of the Wise platform.
+                </p>
+                <p>
                 ● Design, implemented, monitored and maintained Java micro-services ensuring low-latency.
                 </p>
                 </>
@@ -57,21 +89,36 @@ const SubheadingData = {
                     ● Used AWS Lambda to trigger automated processing of incoming protobuf data, optimising data pipeline efficiency.
                 </p>
                 <p>
-                ● Managed the cloud Kotlin code-base and created components to receive protobuf from the embedded system, storing
-                incoming data in Amazon S3.
-                </p>
-                <p>
                 ● Created traffic sign data handling tests using Python, as well as load testing the embedded system.
                 </p>
                 </>
             ),
         },
         {
-            title: "2022 software testing intern @ Nokia",
+            title: " Software Engineer Intern | Nokia | November 2021- May 2022 | Budapest, Hungary",
             content: (
                 <>
                 <p>
-                    I am so sick and tired of looking for a job im so good please
+                ● Developedandexecuted Selenium automated tests to validate front-end.
+                </p>
+                <p>
+                ● WorkedwithCross-Browser and Compatibility Testing using Selenium Grid and TestNG
+                </p>
+                <p>
+                ● BuiltCI/CDtesting pipelines in Jenkins, integrating API testing for continuous quality checks
+                </p>
+                </>
+            ),
+        },
+        {
+            title: "Functional Programming assistant Lecturer | Eötvös Loránd University | Sep 2021- June 2022 | Budapest, Hungary",
+            content: (
+                <>
+                <p>
+                ● Introduced first semester students into the Functional programming paradigm, and easing their learning processusing algorithms and simplifying complex data structures.
+                </p>
+                <p>
+                ● Heldconsultations to help students understand fundamentals of functional design in Haskell
                 </p>
                 </>
             ),

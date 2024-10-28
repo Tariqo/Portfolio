@@ -2,7 +2,7 @@
     width: 45rem;
     position: fixed;
     display: flex;
-    top: 25%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -17,7 +17,7 @@
   }
   
   .project-item {
-    height: 6.75rem;
+    height: 10.75rem;
     width: 90%;
     display: flex;
     position: relative;

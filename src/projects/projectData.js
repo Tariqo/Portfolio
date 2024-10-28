@@ -1,49 +1,46 @@
-import projectOne from "../assets/project-1.png";
-import projectTwo from "../assets/project-2.png";
-import projectThree from "../assets/project-3.png";
+import projectOne from "../assets/Project1.JPG";
+import projectTwo from "../assets/visualizer.png";
+import projectThree from "../assets/Main Menu.png";
 
 const projects = {
-  1: {
-    title: "SoMe Platform",
+    1: {
+    title: "Object detecion and classification model",
     image: projectOne,
     description: (
-      <>
+        <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        A custom object detection model and a comparison between its performance with an existing object detection model 
+        (YOLO). For that, I generated a synthetic dataset to train my own custom model and fine-tuned an existing one.
         </p>
-      </>
+        </>
     ),
-    github: "https://github.com",
-    demo: "https://netlify.com",
-  },
+    github: "https://colab.research.google.com/drive/1MCadn8o3FbpPa9vCSf2eaAchujqXYt-2#scrollTo=z36LynZci_I6",
+    },
   2: {
-    title: "Productivity App",
+    title: "Algorithm Visualizer",
     image: projectTwo,
     description: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          An algorithm visualizer made in the functional programming paradigm, specifically in Clean.  
         </p>
       </>
     ),
-    github: "https://github.com",
-    demo: "https://netlify.com",
+    github: "https://github.com/Tariqo/AlgorithmVisualizer",
   },
+
   3: {
-    title: "Food Delivery App",
+    title: "Reinforcement learning chess engine",
     image: projectThree,
     description: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        The goal of this project was to investigate the effectiveness of reinforcement learning, specifically the Q-learning algorithm,
+        within the context of chess. I designed and implemented a custom chess environment and implemented an engine reinforcement learning algorithm for it.
         </p>
       </>
     ),
-    github: "https://github.com",
-    demo: "https://netlify.com",
+    github: "https://github.com/Tariqo/Chess-Engine_Reinforcement-Learning"
   },
 };
 

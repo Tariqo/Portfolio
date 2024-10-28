@@ -9,7 +9,7 @@ const PlayerStats = () => {
                 <pan id="playerStats_lines_thick"></pan>
                 <pan id="playerStats_lines_thin"></pan>
             </div>
-            <h2>Sick of this shit</h2>
+            <h2>Nothing good gets committed after 2 a.m.</h2>
         </div>
     );
 };

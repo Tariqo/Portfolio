@@ -2,6 +2,28 @@ const skills = {
 
     1: [
         {
+            title: "Python",
+            level: 6
+        },
+        {
+            title: "Java",
+            level: 5
+        },
+        {
+            title: "Javascript",
+            level: 4
+        },
+        {
+            title: "C++",
+            level: 4
+        },
+        {
+            title: "C",
+            level: 4
+        },
+    ],
+    2: [
+        {
             title: "HTML",
             level: 6
         },
@@ -34,7 +56,7 @@ const skills = {
             level: 4
         },
     ],
-    2: [
+    3: [
         {
             title: "SQL",
             level: 5
@@ -59,7 +81,8 @@ const skills = {
             title: "Express.js",
             level: 4
         },
-    ]
+    ],
+
 }
 
 export default skills;

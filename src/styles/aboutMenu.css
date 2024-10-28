@@ -17,8 +17,8 @@
 }
 
 .title{
-    font-size: 2rem;
-    padding-right: 2.5rem;
+    font-size: 1.6rem;
+    padding-right: 1.5rem;
 }
 
 .item.active.title {
@@ -26,12 +26,12 @@
 }
 
 .sub-container {
-    width: 18.5rem;
+    width: 26.5rem;
     position: fixed;
     display: flex;
     flex-direction: column;
-    top: 32%;
-    right: 15vw;
+    top: 22%;
+    right: 10vw;
     cursor: pointer;
     /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.429), rgba(3, 3, 150, 0.133) 100%); */
 }
@@ -82,7 +82,7 @@
 
 .active-subheading .p-container{
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .icon-title-container{
@@ -100,6 +100,7 @@
 .sub-container-1 h3,
 .sub-container-2 h3,
 .sub-container-3 h3 {
+    font-size: 1.2rem;
     position: relative;
     margin: 0.2rem 0;
     padding: 0.5rem 0 0.5rem 1rem;

@@ -20,7 +20,6 @@ export default class ProjectMenu extends Component {
   renderContent = (projects) => {
     return projects.map((project, index) => (
       <div key={index} className={`project-sub-container-${index + 1}`}>
-        <h3>{project.title}</h3>
         <img src={project.image} alt={project.title}></img>
         <div>{project.description}</div>
         <div className="link-container">
@@ -37,12 +36,14 @@ export default class ProjectMenu extends Component {
 
   render() {
     const { activeProject } = this.state;
-    const projectItems = ["PROJECT ONE", "PROJECT TWO", "PROJECT THREE"];
+
+    // Dynamically generate project titles from the projects object
+    const projectItems = Object.keys(projects).map((key) => projects[key].title);
 
     return (
       <div className="project-menu">
         <div className="project-items-container">
-          {projectItems.map((item, index) => (
+          {projectItems.map((title, index) => (
             <div
               key={index}
               className={classNames("project-item", {
@@ -50,7 +51,7 @@ export default class ProjectMenu extends Component {
               })}
               onClick={() => this.handleProjectClick(index + 1)}
             >
-              <h2 className="title">{item}</h2>
+              <h2 className="title">{title}</h2>
             </div>
           ))}
         </div>

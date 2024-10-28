@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import classNames from "classnames";
 import "../styles/skillsMenu.css";
 import skills from "./skillsData";
-import frontendIcon from "../assets/eagle-emblem.png";
-import backendIcon from "../assets/hawk-emblem.png";
+import frontendIcon from "../assets/frontend.png";
+import backendIcon from "../assets/dbs.png";
+import languageIcon from "../assets/languages.png";
 
 export default class SkillsMenu extends Component {
   constructor(props) {
@@ -42,9 +43,9 @@ export default class SkillsMenu extends Component {
 
   render() {
     const { activeMenuItem } = this.state;
-    const menuItems = ["FRONT-END", "BACK-END"];
+    const menuItems = ["LANGUAGES", "FRONT-END", "BACK-END"];
 
-    const currentIcon = activeMenuItem === 1 ? frontendIcon : backendIcon;
+    const currentIcon = activeMenuItem === 1 ? languageIcon : activeMenuItem === 2 ? frontendIcon :  backendIcon;
 
     return (
       <div className="skill-menu">
