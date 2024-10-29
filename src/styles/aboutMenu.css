@@ -34,9 +34,7 @@
     flex-direction: column;
     top: 22%;
     right: 10vw;
-    cursor: pointer;
-    max-height: 70vh; /* Limit height to viewport height */
-    overflow-y: auto; /* Enable vertical scrolling */
+    cursor: pointer; /* Enable vertical scrolling */
 }
 
 .active-subheading {
@@ -130,11 +128,11 @@
 @media (max-width: 700px) {
 
     .sub-container {
+        position:relative;
         width: 70vw;
-        top: 70vh;
+        top: 55vh;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-height: 50vh;
     }
     .title {
         font-size: 0.8rem;

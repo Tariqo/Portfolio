@@ -146,6 +146,7 @@
   }
   @media (max-width: 700px) {
     .menu {
+        position:relative;
       width: 10rem;
       top: 22vh;
       left: 10rem;

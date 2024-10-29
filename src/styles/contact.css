@@ -91,7 +91,6 @@
   }
   @media (max-width: 700px) {
     .contact-menu {
-      padding-top: 10rem;
       width: 70%;
     }
     form {

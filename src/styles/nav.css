@@ -1,4 +1,5 @@
 .nav{
+    position:relative;
     position: fixed;
     display: flex;
     align-items: flex-start;
@@ -58,6 +59,8 @@ a{
         transform: translateX(0);
     }
     .nav{
+        position: relative;
+        left: 60%;
         top: 22vh;
         transform: translateX(-50%) translateY(-150%);
     }
