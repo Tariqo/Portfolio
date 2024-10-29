@@ -61,8 +61,7 @@ a{
     .nav{
         position: relative;
         left: 60%;
-        top: 22vh;
-        transform: translateX(-50%) translateY(-150%);
+        transform: translateX(-50%) translateY(100%);
     }
     .nav-link{
         width: 2rem;

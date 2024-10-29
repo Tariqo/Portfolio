@@ -150,13 +150,5 @@
     h2,h3, p {
         font-size: 0.8rem;
     }
-    .menu {
-        max-height: 20vh;
-        width: 1rem;
-        position: relative;
-        display: flex;
-        top: 50%;
-        transform: translateY(-25%);
 
-      }
 }

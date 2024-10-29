@@ -87,7 +87,7 @@
       transform: translateX(-50%);
     }
     .project-item {
-      height: 3rem;
+      height: 4rem;
       width: 100%;
     }
     .project-item.activeProject .title {
@@ -103,7 +103,7 @@
       width: 28rem;
       flex-direction: column;
       align-items: center;
-      transform: translateY(35%) translateX(-50%);
+      transform: translateY(20%) translateX(-50%);
     }
     .project-menu p {
       font-size: 0.7rem;
