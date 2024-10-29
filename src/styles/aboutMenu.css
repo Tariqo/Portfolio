@@ -8,10 +8,8 @@
     top: 60%;
     transform: translateY(-60%);
     left: 15vw;
-    max-height: 80vh; /* Limit height to viewport height */
-    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 80vh; 
 }
-
 .item {
     height: 4rem;
     display: flex;
@@ -132,21 +130,18 @@
 @media (max-width: 700px) {
 
     .sub-container {
-        width: 15rem;
-        top: 70%;
+        width: 70vw;
+        top: 70vh;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-height: 50vh; /* Further limit height for mobile */
-    }
-    .menu {
-        max-height: 50vh; /* Also limit menu height on mobile */
+        max-height: 50vh;
     }
     .title {
         font-size: 0.8rem;
         padding-right: 2.5rem;
     }
     .active-subheading .p-container {
-        font-size: 0.8rem;
+        font-size: 1.8rem;
     }
     .icon-title-container, icon {
         display: None;
@@ -157,4 +152,13 @@
     h2,h3, p {
         font-size: 0.8rem;
     }
+    .menu {
+        max-height: 20vh;
+        width: 1rem;
+        position: relative;
+        display: flex;
+        top: 50%;
+        transform: translateY(-25%);
+
+      }
 }

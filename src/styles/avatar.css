@@ -47,4 +47,10 @@
         height: 95vh;
         bottom: -15vh;
     }
+    .avatar.skills {
+        height: 120vh;
+        bottom: -40vh;
+        /* left: -1.5rem; */
+        transform: translateX(-30%) scaleX(-1);
+    }
 }

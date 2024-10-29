@@ -19,6 +19,9 @@
 }
 
 @media (max-width:1100px) {
+    #bg{
+        position: fixed;
+    }
     .shadow-overlay{
         background-color: rgba(0, 0, 0, 0.7);
     }

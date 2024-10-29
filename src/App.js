@@ -8,7 +8,7 @@ import Contact from "./contact/Contact";
 import "./styles/app.css";
 import Background from "./background/Background.js";
 import PlayerStats from "./playerStats/PlayerStats.js";
-
+import Footer from "./footer/footer.js"
 
 const App = () => {
   return (
@@ -22,6 +22,7 @@ const App = () => {
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <PlayerStats/>
+      {/* <Footer/> */}
     </Router>
   );
 }
