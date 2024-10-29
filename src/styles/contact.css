@@ -1,8 +1,8 @@
 .contact-menu {
-    position: relative;
+    position: fixed;
     top: 57%;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
   }
   
   form {
@@ -91,7 +91,9 @@
   }
   @media (max-width: 700px) {
     .contact-menu {
+      position: relative;
       width: 70%;
+      transform: translate(-50%, 50%);
     }
     form {
       width: 100%;
